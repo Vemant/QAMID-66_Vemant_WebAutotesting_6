@@ -32,7 +32,6 @@ describe("template spec", () => {
 
   it("Adding new book", () => {
     cy.loginpass("bropet@mail.ru", "123");
-    // cy.contains("Add new").click();
     cy.bookadding(
       "Dead souls",
       "Text about adventures of Chichikov",
@@ -44,7 +43,6 @@ describe("template spec", () => {
 
   it("Adding to favorite", () => {
     cy.loginpass("bropet@mail.ru", "123");
-    // cy.contains("Add new").click();
     cy.bookadding("War and Peace", "Text about Napoleon Wars", "Leo Tolstoy");
     cy.contains("Add to favorite").click();
     cy.contains("Favorites").click();
