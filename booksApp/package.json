@@ -28,7 +28,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "e2e:chrome": "cypress run --browser chrome",
+    "e2e:edge": "cypress run --browser edge"
   },
   "eslintConfig": {
     "extends": "react-app"
