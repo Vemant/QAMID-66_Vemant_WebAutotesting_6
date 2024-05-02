@@ -30,7 +30,7 @@
     "eject": "react-scripts eject",
     "lint": "eslint .",
     "e2e:chrome": "cypress run --browser chrome",
-    "e2e:edge": "cypress run --browser edge"
+    "e2e:firefox": "cypress run --browser firefox"
   },
   "eslintConfig": {
     "extends": "react-app"
