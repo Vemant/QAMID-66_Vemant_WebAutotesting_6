@@ -29,8 +29,14 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint .",
-    "e2e:chrome": "cypress run --browser chrome",
-    "e2e:firefox": "cypress run --browser firefox"
+    "chrome:headed": "cypress run --browser chrome --headed --config-file cypress.config.js",
+    "chrome:headless": "cypress run --browser chrome --headless --config-file cypress.config.js",
+    "chrome:headed:mobile": "cypress run --browser chrome --headed --config-file cypressmobile.config.js",
+    "chrome:headless:mobile": "cypress run --browser chrome --headless --config-file cypressmobile.config.js",
+    "firefox:headed": "cypress run --browser firefox --headed --config-file cypress.config.js",
+    "firefox:headless": "cypress run --browser firefox --headed --config-file cypress.config.js",
+    "firefox:headed:mobile": "cypress run --browser firefox --headed --config-file cypressmobile.config.js",
+    "firefox:headless:mobile": "cypress run --browser firefox --headed --config-file cypressmobile.envconfig.js"
   },
   "eslintConfig": {
     "extends": "react-app"
