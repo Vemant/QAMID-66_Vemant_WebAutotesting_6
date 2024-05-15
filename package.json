@@ -3,7 +3,15 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "chrome:headed": "cypress run --browser chrome --headed --config-file cypress.config.js",
+    "chrome:headless": "cypress run --browser chrome --headless --config-file cypress.config.js",
+    "chrome:headed:mobile": "cypress run --browser chrome --headed --config-file cypressmobile.config.js",
+    "chrome:headless:mobile": "cypress run --browser chrome --headless --config-file cypressmobile.config.js",
+    "firefox:headed": "cypress run --browser firefox --headed --config-file cypress.config.js",
+    "firefox:headless": "cypress run --browser firefox --headed --config-file cypress.config.js",
+    "firefox:headed:mobile": "cypress run --browser firefox --headed --config-file cypressmobile.config.js",
+    "firefox:headless:mobile": "cypress run --browser firefox --headed --config-file cypressmobile.envconfig.js"
   },
   "keywords": [],
   "author": "",
